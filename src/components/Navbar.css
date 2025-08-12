@@ -1,0 +1,28 @@
+
+
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+  background: linear-gradient(90deg, #0f172a, #1e3a8a);
+  color: #fff;
+  border-radius: 8px;
+  margin: 12px 0;
+}
+.brand {
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+.nav-right .nav-link {
+  margin-left: 14px;
+  color: #e6eefc;
+  text-decoration: none;
+}
+.nav-right .nav-link.active {
+  text-decoration: underline;
+  color: #fff;
+}

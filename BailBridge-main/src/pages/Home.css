@@ -1,0 +1,90 @@
+.hero {
+  text-align: center;
+  margin-bottom: 20px;
+  background: linear-gradient(180deg, #eef2ff 0, #fff 100%);
+  height: 25vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  animation: fadeSlideIn 2s ease-out;
+  position: relative;
+  overflow: hidden;
+  padding-top: 20px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(37,99,235,0.08) 0%, transparent 70%),
+              radial-gradient(circle at 20% 80%, rgba(6,182,212,0.08) 0%, transparent 70%);
+  background-size: cover;
+  animation: floatBackground 12s ease-in-out infinite alternate;
+  z-index: 0;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  position: relative;
+  z-index: 1;
+  max-width: 90%;
+  margin: 0 auto;
+}
+.accent {
+  color: #2563eb;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+}
+.lead {
+  font-size: 1.1rem;
+  color: #64748b;
+  max-width: 600px;
+  margin: 10px auto;
+  position: relative;
+  z-index: 1;
+}
+.hero-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+.hero-actions button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.hero-actions button:hover {
+  background: #1e40af;
+}
+.charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 20px;
+}
+.chart-card {
+  background: #fff;
+  padding: 14px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(16, 24, 40, 0.04);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes floatBackground {
+ 0% { transform: translate(0, 0) scale(1); }
+ 100% { transform: translate(20px, 20px) scale(1.05); }
+}

@@ -1,0 +1,43 @@
+
+
+
+.form-page {
+  background: #fff;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(16, 24, 40, 0.04);
+}
+.case-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.case-form input,
+.case-form textarea,
+.case-form select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+.row {
+  display: flex;
+  gap: 12px;
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.result {
+  padding: 8px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+.result.ok {
+  background: #d1fae5;
+  color: #065f46;
+}
+.result.no {
+  background: #fee2e2;
+  color: #991b1b;
+}

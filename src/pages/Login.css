@@ -1,0 +1,23 @@
+.requests {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+.request-card {
+  background: #fff;
+  padding: 14px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(16, 24, 40, 0.04);
+}
+.req-left {
+  flex: 1;
+}
+.req-right {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.decision-row {
+  display: flex;
+  gap: 10px;
+}
